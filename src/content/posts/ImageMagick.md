@@ -4,8 +4,10 @@ published: 2025-11-19
 pinned: true
 description: A simple example of a Markdown blog post.
 tags: [ImageMagick, 软件, 开源]
-category: Examples
-author: emn178
+category: 软件
+licenseName: "Unlicensed"
+author: 御剑乘风
+sourceLink: "https://github.com/h-lyf/Mizuki/blob/master/src/content/posts/ImageMagick.md"
 draft: false
 date: 2025-11-19
 pubDate: 2025-11-19
