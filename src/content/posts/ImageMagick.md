@@ -14,12 +14,9 @@ pubDate: 2025-11-19
 ---
 
 # 介绍
-[![Build Status](https://github.com/ImageMagick/ImageMagick/workflows/main/badge.svg)](https://github.com/ImageMagick/ImageMagick/actions)
-[![Fuzzing Status](https://oss-fuzz-build-logs.storage.googleapis.com/badges/imagemagick.svg)](https://issues.oss-fuzz.com/issues?q=%22project%20ImageMagick%22)
-[![Donate](https://img.shields.io/badge/%24-donate-ff00ff.svg)](https://github.com/sponsors/ImageMagick)
 
 <p align="center">
-<img align="center" src="https://imagemagick.org/image/wizard.png" alt="ImageMagick logo" width="265" height="353"/>
+<img align="center" src="https://camo.githubusercontent.com/a079acc61a9e8d5010858ed2b6fc1c8f9eb7b9b30b8c89c2be43f4fd6492de0a/68747470733a2f2f696d6167656d616769636b2e6f72672f696d6167652f77697a6172642e706e67" alt="ImageMagick logo" width="265" height="353"/>
 </p>
 
 [ImageMagick®](https://imagemagick.org/) is a free and [open-source](https://imagemagick.org/script/license.php) software suite, used for editing and manipulating digital images. It can be used to create, edit, compose, or convert bitmap images, and supports a wide range of file [formats](https://imagemagick.org/script/formats.php), including JPEG, PNG, GIF, TIFF, and PDF.
