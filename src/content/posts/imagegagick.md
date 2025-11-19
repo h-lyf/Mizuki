@@ -8,9 +8,6 @@ category: Examples
 author: emn178
 draft: false
 date: 2025-11-19
-image:
-  url: 'https://camo.githubusercontent.com/a079acc61a9e8d5010858ed2b6fc1c8f9eb7b9b30b8c89c2be43f4fd6492de0a/68747470733a2f2f696d6167656d616769636b2e6f72672f696d6167652f77697a6172642e706e67'
-  alt: 'ImageMagick'
 pubDate: 2025-11-19
 ---
 
