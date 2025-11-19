@@ -234,7 +234,7 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					url: "https://github.com/h-lyf",
 					external: true,
 					icon: "fa6-brands:github",
 				},
@@ -323,7 +323,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/3200x3200.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "御剑乘风",
 	bio: "还有一件事！",
 	typewriter: {
@@ -382,7 +382,7 @@ export const commentConfig: CommentConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "Announcement", // 公告标题
+	title: "公告", // 公告标题
 	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
