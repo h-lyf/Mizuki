@@ -4,7 +4,7 @@ published: 2025-11-20
 pinned: true
 description: A simple example of a Markdown blog post.
 tags: [ImageMagick, 软件, 开源]
-category: 软件
+category: "软件"
 licenseName: "CC BY 4.0"
 author: 御剑乘风
 draft: false
