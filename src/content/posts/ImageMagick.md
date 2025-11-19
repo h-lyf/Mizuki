@@ -19,14 +19,12 @@ pubDate: 2025-11-19
 <img align="center" src="https://camo.githubusercontent.com/a079acc61a9e8d5010858ed2b6fc1c8f9eb7b9b30b8c89c2be43f4fd6492de0a/68747470733a2f2f696d6167656d616769636b2e6f72672f696d6167652f77697a6172642e706e67" alt="ImageMagick logo" width="265" height="353"/>
 </p>
 
-[ImageMagick®](https://imagemagick.org/) is a free and [open-source](https://imagemagick.org/script/license.php) software suite, used for editing and manipulating digital images. It can be used to create, edit, compose, or convert bitmap images, and supports a wide range of file [formats](https://imagemagick.org/script/formats.php), including JPEG, PNG, GIF, TIFF, and PDF.
+[ImageMagick®](https://imagemagick.org/) 是一款免费且[开源](https://imagemagick.org/script/license.php)的软件套件，用于编辑和处理数字图像。它可用于创建、编辑、合成或转换位图图像，并支持广泛的文件[格式](https://imagemagick.org/script/formats.php)，包括 JPEG、PNG、GIF、TIFF 和 PDF。
 
 ## What is ImageMagick?
 
-ImageMagick is widely used in industries such as web development, graphic design, and video editing, as well as in scientific research, medical imaging, and astronomy. Its versatile and customizable nature, along with its robust image processing capabilities, make it a popular choice for a wide range of image-related tasks.
+ImageMagick 广泛应用于网页开发、图形设计、视频编辑等行业，同时也用于科学研究、医学成像和天文学。其多功能性和可定制性，加上强大的图像处理能力，使其成为各种图像相关任务的流行选择。
 
-ImageMagick includes a command-line interface for executing complex image processing tasks, as well as APIs for integrating its features into software applications. It is written in C and can be used on a variety of operating systems, including Linux, Windows, and macOS.
+ImageMagick 包含命令行界面，用于执行复杂的图像处理任务，以及 API，用于将其功能集成到软件应用程序中。它使用 C 语言编写，可在多种操作系统上使用，包括 Linux、Windows 和 macOS。
 
-The main website for ImageMagick can be found at [https://imagemagick.org](https://imagemagick.org/). The source code for this software can be accessed through a [repository](https://github.com/ImageMagick/ImageMagick). In addition, we maintain a legacy version of ImageMagick [version 6](https://legacy.imagemagick.org/).
-
-Creating a security policy that fits your specific local environment before making use of ImageMagick is highly advised. You can find guidance on setting up this [policy](https://imagemagick.org/script/security-policy.php). Also, it's important to verify your policy using the [validation tool](https://imagemagick.org/script/security-policy.php).
+ImageMagick 的主网站位于 [https://imagemagick.org](https://imagemagick.org/)，该软件的源代码可以通过[仓库](https://github.com/ImageMagick/ImageMagick)获取。
