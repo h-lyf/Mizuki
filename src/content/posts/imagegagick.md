@@ -1,18 +1,17 @@
 ---
 title: ImageMagick
-published: 2025-11-20
+published: 2025-11-19
 pinned: true
 description: A simple example of a Markdown blog post.
 tags: [ImageMagick, 软件, 开源]
-category: "软件"
-licenseName: "CC BY 4.0"
-author: 御剑乘风
+category: Examples
+author: emn178
 draft: false
-date: 2025-11-20
+date: 2025-11-19
 image:
   url: 'https://camo.githubusercontent.com/a079acc61a9e8d5010858ed2b6fc1c8f9eb7b9b30b8c89c2be43f4fd6492de0a/68747470733a2f2f696d6167656d616769636b2e6f72672f696d6167652f77697a6172642e706e67'
   alt: 'ImageMagick'
-pubDate: 2025-11-20
+pubDate: 2025-11-19
 ---
 
 # test
