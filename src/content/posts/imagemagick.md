@@ -1,7 +1,7 @@
 ---
 title: ImageMagick
 published: 2025-11-19
-pinned: true
+pinned: false
 description: A simple example of a Markdown blog post.
 tags: [ImageMagick, 软件, 开源]
 category: 软件
