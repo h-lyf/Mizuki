@@ -8,7 +8,8 @@ import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { getSortedPosts } from "@utils/content-utils";
-import { getDir, getPostUrlBySlug } from "@utils/url-utils";
+import { getDir, getPostUrlBySlug, removeFileExtension, getFileDirFromPath } from "@utils/url-utils";
+import { render } from "astro:content";
 import { Icon } from "astro-icon/components";
 import bcryptjs from "bcryptjs";
 import CryptoJS from "crypto-js";
@@ -26,9 +27,12 @@ export async function getStaticPaths() {
 	const paths: { params: { slug: string }, props: { entry: CollectionEntry<"posts"> } }[] = [];
 	
 	for (const entry of blogEntries) {
+        // 将 id 转换为 slug（移除扩展名）以匹配路由参数
+        const slug = removeFileExtension(entry.id);
+
 		// 为每篇文章创建默认的 slug 路径
 		paths.push({
-			params: { slug: entry.slug },
+			params: { slug },
 			props: { entry },
 		});
 		
@@ -51,9 +55,9 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content, headings } = await entry.render();
+const { Content, headings } = await render(entry);
 
-const { remarkPluginFrontmatter } = await entry.render();
+const { remarkPluginFrontmatter } = await render(entry);
 
 // 处理加密逻辑
 let encryptedContent = "";
@@ -113,7 +117,7 @@ const jsonLd = {
     description={entry.data.description}
     lang={entry.data.lang}
     setOGTypeArticle={true}
-    postSlug={entry.slug}
+    postSlug={entry.id}
     headings={headings}
 >
     <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
@@ -191,8 +195,8 @@ const jsonLd = {
                     published={entry.data.published}
                     updated={entry.data.updated}
                     tags={entry.data.tags}
-                    category={entry.data.category}
-                    slug={entry.slug}
+                    category={entry.data.category || undefined}
+                    id={entry.id}
                 />
                 {
                     !entry.data.image && (
@@ -210,7 +214,7 @@ const jsonLd = {
                         <ImageWrapper
                             id="post-cover"
                             src={entry.data.image}
-                            basePath={path.join("content/posts/", getDir(entry.id))}
+                            basePath={getFileDirFromPath(entry.filePath || '')}
                             class="mb-8 rounded-xl banner-container onload-animation"
                         />
                     </>
@@ -231,7 +235,7 @@ const jsonLd = {
                         {licenseConfig.enable && (
                             <License
                                 title={entry.data.title}
-                                slug={entry.slug}
+                                id={entry.id}
                                 pubDate={entry.data.published}
                                 author={entry.data.author}
                                 sourceLink={entry.data.sourceLink}

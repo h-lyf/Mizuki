@@ -15,7 +15,7 @@ categories = params.has("category") ? params.getAll("category") : [];
 const uncategorized = params.get("uncategorized");
 
 interface Post {
-	slug: string;
+	id: string;
 	data: {
 		title: string;
 		tags: string[];
@@ -32,7 +32,7 @@ function getPostUrl(post: Post): string {
 		return getPostUrlByPermalink(post.data.permalink);
 	}
 	// 否则使用默认的 slug 路径
-	return getPostUrlBySlug(post.slug);
+	return getPostUrlBySlug(post.id);
 }
 
 interface Group {
