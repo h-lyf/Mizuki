@@ -30,7 +30,13 @@ ImageMagick 包含命令行界面，用于执行复杂的图像处理任务，�
 ImageMagick 的主网站位于 [https://imagemagick.org](https://imagemagick.org/)，该软件的源代码可以通过[仓库](https://github.com/ImageMagick/ImageMagick)获取。
 
 # 用法
+
 - [格式转换](https://imagemagick.org/)
 ```bash
 magick input.jpg output.png
+```
+
+- 正方形最大程度裁剪成圆形
+```bash
+magick input.jpeg -alpha set ( +clone -threshold -1 -negate -fill white -draw "circle %[fx:w/2],%[fx:h/2] %[fx:w/2],0" ) -compose CopyOpacity -composite output.png
 ```
