@@ -3,6 +3,7 @@ title: FFmpeg
 published: 2025-11-20
 pinned: false
 description: A simple example of a Markdown blog post.
+image: "images/ffmpeg.png"
 tags: [FFmpeg]
 category: FFmpeg
 licenseName: "Unlicensed"
