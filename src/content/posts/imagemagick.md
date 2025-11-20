@@ -3,6 +3,7 @@ title: ImageMagick
 published: 2025-11-19
 pinned: false
 description: A simple example of a Markdown blog post.
+image: "images/imagemagick.png"
 tags: [ImageMagick, 软件, 开源]
 category: 软件
 licenseName: "Unlicensed"
@@ -13,15 +14,9 @@ date: 2025-11-19
 pubDate: 2025-11-19
 ---
 
-# 介绍
-
-<p align="center">
-<img align="center" src="https://camo.githubusercontent.com/a079acc61a9e8d5010858ed2b6fc1c8f9eb7b9b30b8c89c2be43f4fd6492de0a/68747470733a2f2f696d6167656d616769636b2e6f72672f696d6167652f77697a6172642e706e67" alt="ImageMagick logo" width="265" height="353"/>
-</p>
-
 [ImageMagick®](https://imagemagick.org/) 是一款免费且[开源](https://imagemagick.org/script/license.php)的软件套件，用于编辑和处理数字图像。它可用于创建、编辑、合成或转换位图图像，并支持广泛的文件[格式](https://imagemagick.org/script/formats.php)，包括 JPEG、PNG、GIF、TIFF 和 PDF。
 
-## ImageMagick 是什么?
+# 介绍
 
 ImageMagick 广泛应用于网页开发、图形设计、视频编辑等行业，同时也用于科学研究、医学成像和天文学。其多功能性和可定制性，加上强大的图像处理能力，使其成为各种图像相关任务的流行选择。
 
