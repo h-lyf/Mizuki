@@ -20,7 +20,7 @@ import { LinkPreset } from "./types/config";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
-	title: "御剑乘风",
+	title: "御剑乘风の博客",
 	subtitle: "",
 	siteURL: "https://mizuki.666411.xyz/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-11-19", // 站点开始运行日期，用于站点统计组件计算运行天数
