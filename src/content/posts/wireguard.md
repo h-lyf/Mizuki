@@ -13,8 +13,7 @@ draft: false
 date: 2025-11-20
 pubDate: 2025-11-20
 ---
-
-![image.png](https://pub-d169c15f75c9477fb4d500a8cf7ff73b.r2.dev/images/9410bd53704974141b78e9fb128a0209e9a63d5d.png)  
+ 
 # 服务器端  
 ## 1. 安装 WireGuard  
 ```bash  
