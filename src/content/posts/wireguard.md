@@ -3,6 +3,7 @@ title: WireGuard
 published: 2025-11-20
 pinned: false
 description: A simple example of a Markdown blog post.
+image: "images/wireguard.png"
 tags: [WireGuard]
 category: WireGuard
 licenseName: "Unlicensed"

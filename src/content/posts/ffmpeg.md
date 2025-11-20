@@ -14,8 +14,6 @@ date: 2025-11-20
 pubDate: 2025-11-20
 ---
 
-![favicon.ico](https://pub-d169c15f75c9477fb4d500a8cf7ff73b.r2.dev/images/058a12ff7ffe7fe3299de4d238ae4fa825bf1e4a.ico)
-
 ### 提取字幕
 * 提取字幕为 ASS 格式
 ```bash
