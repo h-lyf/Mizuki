@@ -1,6 +1,6 @@
 ---
 title: Cloudflare DNS
-published: 2025-11-19
+published: 2025-11-20
 pinned: false
 description: A simple example of a Markdown blog post.
 tags: [Cloudflare, DNS]
@@ -9,8 +9,8 @@ licenseName: "Unlicensed"
 author: 御剑乘风
 sourceLink: "https://github.com/h-lyf/Mizuki/blob/master/src/content/posts/cloudflare-dns.md"
 draft: false
-date: 2025-11-19
-pubDate: 2025-11-19
+date: 2025-11-20
+pubDate: 2025-11-20
 ---
 
 # 前期准备
