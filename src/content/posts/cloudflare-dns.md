@@ -3,7 +3,7 @@ title: Cloudflare DNS
 published: 2025-11-20
 pinned: false
 description: A simple example of a Markdown blog post.
-image: "/src/assets/images/cloudflare.png"
+image: "images/cloudflare.png"
 tags: [Cloudflare, DNS]
 category: Cloudflare
 licenseName: "Unlicensed"
