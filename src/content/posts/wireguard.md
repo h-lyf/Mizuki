@@ -2,7 +2,7 @@
 title: WireGuard
 published: 2025-11-20
 pinned: false
-description: A simple example of a Markdown blog post.
+description: WireGuard 搭建通用 VPN，实现内网穿透。
 image: "images/wireguard.png"
 tags: [WireGuard]
 category: WireGuard

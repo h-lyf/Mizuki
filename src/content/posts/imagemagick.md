@@ -2,7 +2,7 @@
 title: ImageMagick
 published: 2025-11-19
 pinned: false
-description: A simple example of a Markdown blog post.
+description: ImageMagick 最常用、最实用的命令汇总。
 image: "images/imagemagick.png"
 tags: [ImageMagick, 软件, 开源]
 category: 软件
@@ -24,7 +24,7 @@ ImageMagick 包含命令行界面，用于执行复杂的图像处理任务，�
 
 ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)，该软件的源代码可以通过[仓库](https://github.com/ImageMagick/ImageMagick)获取。
 
-# 常用用法
+# 常用命令
 
 1. **基本信息查看**
     - 查看图片详细信息

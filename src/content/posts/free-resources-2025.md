@@ -2,7 +2,7 @@
 title: 免费素材大全2025
 published: 2025-11-20
 pinned: false
-description: A simple example of a Markdown blog post.
+description: 2025 年免费素材网站大全。
 tags: [素材]
 category: 素材
 licenseName: "Unlicensed"

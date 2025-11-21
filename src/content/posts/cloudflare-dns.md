@@ -2,7 +2,7 @@
 title: Cloudflare DNS
 published: 2025-11-20
 pinned: false
-description: A simple example of a Markdown blog post.
+description: Cloudflare DNS 解析自动化脚本。
 image: "images/cloudflare.webp"
 tags: [Cloudflare, DNS]
 category: Cloudflare
