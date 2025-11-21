@@ -104,25 +104,24 @@ WireGuard® 是一种极其简单但快速且现代的 VPN，它利用了最先�
     ```  
 # 进阶配置  
 1. 公网访问内网服务  
-    - **服务端**  
+    - 服务端  
+    ```bash
+    ip addr
+    ```
     ```bash
     iptables -t nat -A PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>
     ```  
-    **如果服务器是弹性公网 IP,服务器公网 IP 可能需要改成服务商的私网 IP,通过查看 IP**  
-    ```bash
-    ip addr
-    ```  
-    **IP 和服务器公网 IP 一致用公网 IP,否则使用刚查到的私网 IP**  
-    * 删除规则  
+    > 如果服务器是弹性公网 IP,服务器公网 IP 可能需要改成服务商的私网 IP,IP 和服务器公网 IP 一致用公网 IP,否则使用刚查到的私网 IP
+    - 删除规则  
     ```bash
     iptables -t nat -D PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>
     ```  
 2. 客户端通过服务端访问外网  
-    - **服务端**  
+    - 服务端
     ```bash
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
     ```  
-    - **客户端**
+    - 客户端
     ```bash
     [Interface]
     PrivateKey = <客户端的私钥>
@@ -134,11 +133,11 @@ WireGuard® 是一种极其简单但快速且现代的 VPN，它利用了最先�
     AllowedIPs = 0.0.0.0/0
     PersistentKeepalive = 10
     ```  
-    - 删除规则  
+    - 删除服务端规则  
     ```bash
     iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
     ```  
-    **AllowedIPs = 0.0.0.0/0 -- 通过 WireGuard 隧道发送和接收任何目的地的 IP 流量,根据情况进行修改**  
+    > AllowedIPs = 0.0.0.0/0        # 通过 WireGuard 隧道发送和接收任何目的地的 IP 流量,根据情况进行修改
 3. 保存规则  
     - 通过 iptables-persistent 保存  
     ```bash
