@@ -22,7 +22,7 @@ ImageMagick 广泛应用于网页开发、图形设计、视频编辑等行业�
 
 ImageMagick 包含命令行界面，用于执行复杂的图像处理任务，以及 API，用于将其功能集成到软件应用程序中。它使用 C 语言编写，可在多种操作系统上使用，包括 Linux、Windows 和 macOS。
 
-ImageMagick 的主网站位于 [https://imagemagick.org](https://imagemagick.org/)，该软件的源代码可以通过[仓库](https://github.com/ImageMagick/ImageMagick)获取。
+ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)，该软件的源代码可以通过[仓库](https://github.com/ImageMagick/ImageMagick)获取。
 
 # 常用用法
 
@@ -179,3 +179,5 @@ ImageMagick 的主网站位于 [https://imagemagick.org](https://imagemagick.org
     ```bash
     magick input.jpg -remove background output.png
     ```
+
+**更多用法可到 [ImageMagick 官网](https://imagemagick.org/)查看！**
