@@ -32,11 +32,13 @@ magick input.jpg output.png
 ```
 
 - [图像识别](https://imagemagick.org/script/identify.php) ：描述图像的格式和属性。
+1. 查看图片详细信息
 ```bash
-magick identify image.jpg                  # 查看图片详细信息
+magick identify image.jpg
 ```
+2. 批量查看文件名、分辨率、文件大小
 ```bash
-magick identify -format "%f %wx%h %b" *.jpg # 批量查看文件名、分辨率、文件大小
+magick identify -format "%f %wx%h %b" *.jpg
 ```
 
 - 正方形最大程度裁剪成圆形
