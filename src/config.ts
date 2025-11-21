@@ -248,13 +248,15 @@ export const navBarConfig: NavBarConfig = {
 				},
 				{
 					name: "Telegram",
-					icon: "fa6-brands:telegram",
 					url: "https://t.me/Oxc00f",
+					external: true,
+					icon: "fa6-brands:telegram",
 				},
 				{
 					name: "Discord",
-					icon: "fa6-brands:discord",
 					url: "https://discord.gg/3JuFKMJfpj",
+					external: true,
+					icon: "fa6-brands:discord",
 				},
 				// {
 				// 	name: "Bilibili",
