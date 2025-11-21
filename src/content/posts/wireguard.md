@@ -104,64 +104,64 @@ WireGuard® 是一种极其简单但快速且现代的 VPN，它利用了最先�
     ```bash
     ping 10.0.1.2
     ```  
-## 进阶配置  
+# 进阶配置  
 1. 公网访问内网服务  
-* **服务端**  
-```bash
-iptables -t nat -A PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>
-```  
-**如果服务器是弹性公网 IP,服务器公网 IP 可能需要改成服务商的私网 IP,通过查看 IP**  
-```bash
-ip addr
-```  
-**IP 和服务器公网 IP 一致用公网 IP,否则使用刚查到的私网 IP**  
-* 删除规则  
-```bash
-iptables -t nat -D PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>
-```  
-## 2. 客户端通过服务端访问外网  
-* **服务端**  
-```bash
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-```  
-* **客户端**  
-```bash
-[Interface]
-PrivateKey = <客户端的私钥>
-Address = 10.0.1.2/24
+    - **服务端**  
+    ```bash
+    iptables -t nat -A PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>
+    ```  
+    **如果服务器是弹性公网 IP,服务器公网 IP 可能需要改成服务商的私网 IP,通过查看 IP**  
+    ```bash
+    ip addr
+    ```  
+    **IP 和服务器公网 IP 一致用公网 IP,否则使用刚查到的私网 IP**  
+    * 删除规则  
+    ```bash
+    iptables -t nat -D PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>
+    ```  
+2. 客户端通过服务端访问外网  
+    - **服务端**  
+    ```bash
+    iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+    ```  
+    - **客户端**
+    ```bash
+    [Interface]
+    PrivateKey = <客户端的私钥>
+    Address = 10.0.1.2/24
 
-[Peer]
-PublicKey = <服务器的公钥>
-Endpoint = <服务器公网IP>:51820
-AllowedIPs = 0.0.0.0/0
-PersistentKeepalive = 10
-```  
-* 删除规则  
-```bash
-iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
-```  
-**AllowedIPs = 0.0.0.0/0 -- 通过 WireGuard 隧道发送和接收任何目的地的 IP 流量,根据情况进行修改**  
-## 3. 保存规则  
-* 通过 iptables-persistent 保存  
-```bash
-apt install iptables-persistent -y
-netfilter-persistent save
-```  
-* 直接写入服务端配置
-```bash  
-[Interface]
-PrivateKey = <服务器私钥>
-Address = 10.0.1.1/24
-ListenPort = 51820
+    [Peer]
+    PublicKey = <服务器的公钥>
+    Endpoint = <服务器公网IP>:51820
+    AllowedIPs = 0.0.0.0/0
+    PersistentKeepalive = 10
+    ```  
+    - 删除规则  
+    ```bash
+    iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+    ```  
+    **AllowedIPs = 0.0.0.0/0 -- 通过 WireGuard 隧道发送和接收任何目的地的 IP 流量,根据情况进行修改**  
+3. 保存规则  
+    - 通过 iptables-persistent 保存  
+    ```bash
+    apt install iptables-persistent -y
+    netfilter-persistent save
+    ```  
+    - 直接写入服务端配置
+    ```bash  
+    [Interface]
+    PrivateKey = <服务器私钥>
+    Address = 10.0.1.1/24
+    ListenPort = 51820
 
-PostUp = sysctl -w net.ipv4.ip_forward=1;iptables -t nat -A PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>;iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-PostDown = sysctl -w net.ipv4.ip_forward=0;iptables -t nat -D PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+    PostUp = sysctl -w net.ipv4.ip_forward=1;iptables -t nat -A PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>;iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+    PostDown = sysctl -w net.ipv4.ip_forward=0;iptables -t nat -D PREROUTING -p tcp -d <服务器公网IP> --dport <服务器端口> -j DNAT --to-destination <客户端IP>:<客户端端口>; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 
-[Peer]
-PublicKey = <客户端1的公钥>
-AllowedIPs = 10.0.1.2/32
+    [Peer]
+    PublicKey = <客户端1的公钥>
+    AllowedIPs = 10.0.1.2/32
 
-[Peer]
-PublicKey = <客户端2的公钥>
-AllowedIPs = 10.0.1.3/32
-```  
+    [Peer]
+    PublicKey = <客户端2的公钥>
+    AllowedIPs = 10.0.1.3/32
+    ```  
