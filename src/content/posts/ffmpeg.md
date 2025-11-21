@@ -5,7 +5,7 @@ pinned: false
 description: A simple example of a Markdown blog post.
 image: "images/ffmpeg.png"
 tags: [FFmpeg]
-category: FFmpeg
+category: 开源软件
 licenseName: "Unlicensed"
 author: 御剑乘风
 sourceLink: "https://github.com/h-lyf/Mizuki/blob/master/src/content/posts/ffmpeg.md"

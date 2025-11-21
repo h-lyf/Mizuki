@@ -5,7 +5,7 @@ pinned: false
 description: WireGuard 搭建通用 VPN，实现内网穿透。
 image: "images/wireguard.png"
 tags: [WireGuard]
-category: WireGuard
+category: 开源软件
 licenseName: "Unlicensed"
 author: 御剑乘风
 sourceLink: "https://github.com/h-lyf/Mizuki/blob/master/src/content/posts/wireguard.md"

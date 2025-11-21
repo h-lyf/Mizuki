@@ -5,7 +5,7 @@ pinned: false
 description: ImageMagick 最常用、最实用的命令汇总。
 image: "images/imagemagick.png"
 tags: [ImageMagick, 软件, 开源]
-category: 软件
+category: 开源软件
 licenseName: "Unlicensed"
 author: 御剑乘风
 sourceLink: "https://github.com/h-lyf/Mizuki/blob/master/src/content/posts/imagemagick.md"
