@@ -358,7 +358,7 @@ export const profileConfig: ProfileConfig = {
 		// },
 		{
 			name: "Bilibli",
-			icon: "fa6-brands:mail",
+			icon: "i-fa6-solid:envelope",
 			url: "https://space.bilibili.com/701864046",
 		},
 		{
