@@ -26,9 +26,17 @@ ImageMagick 的主网站位于 [https://imagemagick.org](https://imagemagick.org
 
 # 用法
 
-- [格式转换](https://imagemagick.org/)
+- [格式转换](https://imagemagick.org/script/convert.php) ：将图像从一种格式转换为另一种格式（例如 PNG 到 JPEG）。
 ```bash
 magick input.jpg output.png
+```
+
+- [图像识别](https://imagemagick.org/script/identify.php) ：描述图像的格式和属性。
+```bash
+magick identify image.jpg                  # 查看图片详细信息
+```
+```bash
+magick identify -format "%f %wx%h %b" *.jpg # 批量查看文件名、分辨率、文件大小
 ```
 
 - 正方形最大程度裁剪成圆形
