@@ -26,7 +26,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
 
 # 常用用法
 
-1. 基本信息查看
+1. **基本信息查看**
     - 查看图片详细信息
     ```bash
     magick identify image.jpg
@@ -36,7 +36,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick identify -format "%f %wx%h %b" *.jpg
     ```
 
-2. 格式转换
+2. **格式转换**
     - 任意格式转任意格式
     ```bash
     magick input.png output.jpg
@@ -54,7 +54,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick input.jpg -quality 85 output.webp
     ```
 
-3. 调整大小
+3. **调整大小**
     - 强制指定尺寸（会变形）
     ```bash
     magick input.jpg -resize 1920x1080 output.jpg
@@ -80,7 +80,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick input.jpeg -alpha set ( +clone -threshold -1 -negate -fill white -draw "circle %[fx:w/2],%[fx:h/2] %[fx:w/2],0" ) -compose CopyOpacity -composite output.png
     ```
 
-4. 批量处理
+4. **批量处理**
     - 批量把文件夹所有图片缩放到最大宽1920，保持比例，不放大
     ```bash
     magick mogrify -path resized -resize 1920x -quality 90 *.jpg
@@ -94,7 +94,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick mogrify -gravity southeast -draw "image over 20,20 0,0 'watermark.png'" *.jpg
     ```
 
-5. 裁剪
+5. **裁剪**
     - 从(100,200)位置裁剪800x600
     ```bash
     magick input.jpg -crop 800x600+100+200 output.jpg
@@ -104,7 +104,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick input.jpg -gravity center -crop 4:3 +repage output.jpg
     ```
 
-6. 添加文字水印
+6. **添加文字水印**
     - 清晰水印
     ```bash
     magick input.jpg -fill white -stroke black -strokewidth 2 -pointsize 48 -font Helvetica -gravity southeast -annotate +30+30 "© 2025 张三" output.jpg
@@ -114,7 +114,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick input.jpg -fill "rgba(255,255,255,0.5)" -pointsize 60 -gravity center -annotate +0+0 "DRAFT" output.jpg
     ```
 
-7. 添加图片水印
+7. **添加图片水印**
     - 清晰水印
     ```bash
     magick input.jpg watermark.png -gravity southeast -geometry +30+30 -composite output.jpg
@@ -125,7 +125,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick input.jpg watermark_fade.png -gravity southeast -composite output.jpg
     ```
 
-8. 压缩优化
+8. **压缩优化**
     - 通用压缩，去除元数据
     ```bash
     magick input.jpg -strip -quality 85 output.jpg
@@ -139,7 +139,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick input.png -strip -define png:compression-level=9 output.png
     ```
 
-9. 拼接图片
+9. **拼接图片**
     - 水平拼接
     ```bash
     magick *.jpg +append result.jpg
@@ -153,7 +153,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick image1.jpg image2.jpg image3.jpg image4.jpg -gravity center -background skyblue +append -append mosaic.jpg
     ```
 
-10. 常用特效
+10. **常用特效**
     - 高斯模糊
     ```bash
     magick input.jpg -blur 0x8 output.jpg
@@ -175,7 +175,7 @@ ImageMagick 的官网位于 [https://imagemagick.org](https://imagemagick.org/)�
     magick input.jpg -colorize 30,60,90 red output.jpg
     ```
 
-11. 去背景
+11. **去背景**
     ```bash
     magick input.jpg -remove background output.png
     ```
