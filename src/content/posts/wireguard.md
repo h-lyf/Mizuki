@@ -26,9 +26,7 @@ WireGuard® 是一种极其简单但快速且现代的 VPN，它利用了最先�
     - 生成密钥对  
     ```bash
     wg genkey | tee private.key | wg pubkey > public.key
-    ```  
-    **private.key -- 为服务器私钥**  
-    **public.key -- 为服务器公钥**  
+    ```   
     - 创建配置文件
     ```bash  
     vim /etc/wireguard/wg0.conf
@@ -50,7 +48,8 @@ WireGuard® 是一种极其简单但快速且现代的 VPN，它利用了最先�
     PublicKey = <客户端2的公钥>
     AllowedIPs = 10.0.1.3/32
     ```  
-    **PostUp = sysctl -w net.ipv4.ip_forward=1; -- 启动 WireGuard 接口时开启 IP 转发**  
+    测试[^1]测试测试  
+    [^1]:**PostUp = sysctl -w net.ipv4.ip_forward=1; -- 启动 WireGuard 接口时开启 IP 转发**  
     **PostDown = sysctl -w net.ipv4.ip_forward=0; -- 关闭 WireGuard 接口时停止 IP 转发**  
 3. 启动 WireGuard  
     ```bash  
