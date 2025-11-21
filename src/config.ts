@@ -357,6 +357,11 @@ export const profileConfig: ProfileConfig = {
 		// 	url: "https://space.bilibili.com/701864046",
 		// },
 		{
+			name: "Bilibli",
+			icon: "fa6-brands:email",
+			url: "https://space.bilibili.com/701864046",
+		},
+		{
 			name: "Telegram",
 			icon: "fa6-brands:telegram",
 			url: "https://t.me/Oxc00f",
