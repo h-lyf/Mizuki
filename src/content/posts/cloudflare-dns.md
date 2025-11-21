@@ -157,5 +157,5 @@ else
   fi
 fi
 ```
-IP_ADDRESS：需要解析的IP；  
-RECORD_TYPE：DNS记录类型，IPv4为A，IPv6为AAAA;  
+
+> RECORD_TYPE：DNS记录类型，IPv4为A，IPv6为AAAA;  
