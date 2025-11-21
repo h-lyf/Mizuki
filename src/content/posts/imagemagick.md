@@ -28,21 +28,31 @@ ImageMagick 的主网站位于 [https://imagemagick.org](https://imagemagick.org
 
 - [格式转换](https://imagemagick.org/script/convert.php) ：将图像从一种格式转换为另一种格式（例如 PNG 到 JPEG）。
     1. 任意格式转任意格式
-        ```bash
-        magick input.jpg output.png
-        ```
+    ```bash
+    magick input.png output.jpg
+    ```
     2. RAW 转 JPG
-
+    ```bash
+    magick input.cr2 output.jpg
+    ```
+    3. 多张图片合并成一个 PDF
+    ```bash
+    magick *.png output.pdf
+    ```
+    4. 转 WebP 并控制质量
+    ```bash
+    magick input.jpg -quality 85 output.webp
+    ```
 
 - [图像识别](https://imagemagick.org/script/identify.php) ：描述图像的格式和属性。
     1. 查看图片详细信息
-```bash
-magick identify image.jpg
-```
-2. 批量查看文件名、分辨率、文件大小
-```bash
-magick identify -format "%f %wx%h %b" *.jpg
-```
+    ```bash
+    magick identify image.jpg
+    ```
+    2. 批量查看文件名、分辨率、文件大小
+    ```bash
+    magick identify -format "%f %wx%h %b" *.jpg
+    ```
 
 - 正方形最大程度裁剪成圆形
 ```bash
