@@ -356,11 +356,11 @@ export const profileConfig: ProfileConfig = {
 		// 	icon: "fa6-brands:bilibili",
 		// 	url: "https://space.bilibili.com/701864046",
 		// },
-		{
-			name: "Mail",
-			icon: "fa6-brands:mail",
-			url: "https://space.bilibili.com/701864046",
-		},
+		// {
+		// 	name: "Mail",
+		// 	icon: "fa6-brands:mail",
+		// 	url: "https://space.bilibili.com/701864046",
+		// },
 		{
 			name: "Telegram",
 			icon: "fa6-brands:telegram",
