@@ -344,6 +344,11 @@ export const profileConfig: ProfileConfig = {
 		// 	icon: "fa6-brands:bilibili",
 		// 	url: "https://space.bilibili.com/701864046",
 		// },
+		{
+			name: "Bilibli",
+			icon: "fa6-brands:telegram",
+			url: "https://space.bilibili.com/701864046",
+		},
 		// {
 		// 	name: "Gitee",
 		// 	icon: "mdi:git",
