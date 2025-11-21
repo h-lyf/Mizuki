@@ -247,17 +247,27 @@ export const navBarConfig: NavBarConfig = {
 					icon: "fa6-brands:github",
 				},
 				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
-					external: true,
-					icon: "fa6-brands:bilibili",
+					name: "Telegram",
+					icon: "fa6-brands:telegram",
+					url: "https://t.me/Oxc00f",
 				},
 				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-					icon: "mdi:git",
+					name: "Discord",
+					icon: "fa6-brands:discord",
+					url: "https://discord.gg/3JuFKMJfpj",
 				},
+				// {
+				// 	name: "Bilibili",
+				// 	url: "https://space.bilibili.com/701864046",
+				// 	external: true,
+				// 	icon: "fa6-brands:bilibili",
+				// },
+				// {
+				// 	name: "Gitee",
+				// 	url: "https://gitee.com/matsuzakayuki/Mizuki",
+				// 	external: true,
+				// 	icon: "mdi:git",
+				// },
 			],
 		},
 		{
@@ -345,9 +355,9 @@ export const profileConfig: ProfileConfig = {
 		// 	url: "https://space.bilibili.com/701864046",
 		// },
 		{
-			name: "Bilibli",
+			name: "Telegram",
 			icon: "fa6-brands:telegram",
-			url: "https://space.bilibili.com/701864046",
+			url: "https://t.me/Oxc00f",
 		},
 		// {
 		// 	name: "Gitee",
