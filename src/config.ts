@@ -247,6 +247,12 @@ export const navBarConfig: NavBarConfig = {
 					icon: "fa6-brands:github",
 				},
 				{
+					name: "Mail",
+					url: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=mail@666411.xyz",
+					external: true,
+					icon: "fa6-solid:envelope",
+				},
+				{
 					name: "Telegram",
 					url: "https://t.me/Oxc00f",
 					external: true,
@@ -359,7 +365,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Mail",
 			icon: "fa6-solid:envelope",
-			url: "https://space.bilibili.com/701864046",
+			url: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=mail@666411.xyz",
 		},
 		{
 			name: "Telegram",
