@@ -135,7 +135,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "Hello,欢迎来到御剑乘风の小破站！", // 主页横幅主标题
+			title: "Hello！欢迎来到御剑乘风の小破站！", // 主页横幅主标题
 
 			subtitle: [
 				"特別なことはないけど、君がいると十分です",
