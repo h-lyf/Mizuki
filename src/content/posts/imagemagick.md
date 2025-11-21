@@ -24,37 +24,64 @@ ImageMagick 包含命令行界面，用于执行复杂的图像处理任务，�
 
 ImageMagick 的主网站位于 [https://imagemagick.org](https://imagemagick.org/)，该软件的源代码可以通过[仓库](https://github.com/ImageMagick/ImageMagick)获取。
 
-# 用法
+# 常用用法
 
-- [格式转换](https://imagemagick.org/script/convert.php) ：将图像从一种格式转换为另一种格式（例如 PNG 到 JPEG）。
-    1. 任意格式转任意格式
-    ```bash
-    magick input.png output.jpg
-    ```
-    2. RAW 转 JPG
-    ```bash
-    magick input.cr2 output.jpg
-    ```
-    3. 多张图片合并成一个 PDF
-    ```bash
-    magick *.png output.pdf
-    ```
-    4. 转 WebP 并控制质量
-    ```bash
-    magick input.jpg -quality 85 output.webp
-    ```
-
-- [图像识别](https://imagemagick.org/script/identify.php) ：描述图像的格式和属性。
-    1. 查看图片详细信息
+1. 基本信息查看
+    - 查看图片详细信息
     ```bash
     magick identify image.jpg
     ```
-    2. 批量查看文件名、分辨率、文件大小
+    - 批量查看文件名、分辨率、文件大小
     ```bash
     magick identify -format "%f %wx%h %b" *.jpg
     ```
 
-- 正方形最大程度裁剪成圆形
-```bash
-magick input.jpeg -alpha set ( +clone -threshold -1 -negate -fill white -draw "circle %[fx:w/2],%[fx:h/2] %[fx:w/2],0" ) -compose CopyOpacity -composite output.png
-```
+2. 格式转换
+    - 任意格式转任意格式
+    ```bash
+    magick input.png output.jpg
+    ```
+    - RAW 转 JPG
+    ```bash
+    magick input.cr2 output.jpg
+    ```
+    - 多张图片合并成一个 PDF
+    ```bash
+    magick *.png output.pdf
+    ```
+    - 转 WebP 并控制质量
+    ```bash
+    magick input.jpg -quality 85 output.webp
+    ```
+
+3. 调整大小
+    - 强制指定尺寸（会变形）
+    ```bash
+    magick input.jpg -resize 1920x1080 output.jpg
+    ```
+    - 强制拉伸
+    ```bash
+    magick input.jpg -resize 1920x1080\! output.jpg
+    ```
+    - 按百分比缩放
+    ```bash
+    magick input.jpg -resize 50% output.jpg
+    ```
+    - 缩放并居中裁剪正方形
+    ```bash
+    magick input.jpg -resize 800x800^ -gravity center -crop 800x800+0+0 output.jpg
+    ```
+    - 快速生成缩略图（去元数据，更小）
+    ```bash
+    magick input.jpg -thumbnail 200x200^ -gravity center -extent 200x200 thumb.jpg
+    ```
+    - 正方形最大程度裁剪成圆形
+    ```bash
+    magick input.jpeg -alpha set ( +clone -threshold -1 -negate -fill white -draw "circle %[fx:w/2],%[fx:h/2] %[fx:w/2],0" ) -compose CopyOpacity -composite output.png
+    ```
+
+4. 批量处理
+    - 批量把文件夹所有图片缩放到最大宽1920，保持比例，不放大
+    ```bash
+    magick mogrify -path resized -resize 1920x -quality 90 *.jpg
+    ```
