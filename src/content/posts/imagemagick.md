@@ -85,3 +85,97 @@ ImageMagick 的主网站位于 [https://imagemagick.org](https://imagemagick.org
     ```bash
     magick mogrify -path resized -resize 1920x -quality 90 *.jpg
     ```
+    - 批量转格式 + 压缩
+    ```bash
+    magick mogrify -format webp -quality 80 *.jpg
+    ```
+    - 给所有图片加水印（右下角）
+    ```bash
+    magick mogrify -gravity southeast -draw "image over 20,20 0,0 'watermark.png'" *.jpg
+    ```
+
+5. 裁剪
+    - 从(100,200)位置裁剪800x600
+    ```bash
+    magick input.jpg -crop 800x600+100+200 output.jpg
+    ```
+    - 按4:3比例居中裁剪
+    ```bash
+    magick input.jpg -gravity center -crop 4:3 +repage output.jpg
+    ```
+
+6. 添加文字水印
+    - 清晰水印
+    ```bash
+    magick input.jpg -fill white -stroke black -strokewidth 2 -pointsize 48 -font Helvetica -gravity southeast -annotate +30+30 "© 2025 张三" output.jpg
+    ```
+    - 半透明水印
+    ```bash
+    magick input.jpg -fill "rgba(255,255,255,0.5)" -pointsize 60 -gravity center -annotate +0+0 "DRAFT" output.jpg
+    ```
+
+7. 添加图片水印
+    - 清晰水印
+    ```bash
+    magick input.jpg watermark.png -gravity southeast -geometry +30+30 -composite output.jpg
+    ```
+    - 半透明水印
+    ```bash
+    magick watermark.png -channel A -evaluate Multiply 0.5 +channel watermark_fade.png
+    magick input.jpg watermark_fade.png -gravity southeast -composite output.jpg
+    ```
+
+8. 压缩优化
+    - 通用压缩，去除元数据
+    ```bash
+    magick input.jpg -strip -quality 85 output.jpg
+    ```
+    - JPG 最佳压缩
+    ```bash
+    magick input.jpg -sampling-factor 4:2:0 -strip -interlace JPEG -colorspace sRGB optimized.jpg
+    ```
+    - PNG 最大压缩
+    ```bash
+    magick input.png -strip -define png:compression-level=9 output.png
+    ```
+
+9. 拼接图片
+    - 水平拼接
+    ```bash
+    magick *.jpg +append result.jpg
+    ```
+    - 垂直拼接
+    ```bash
+    magick *.jpg -append result.jpg
+    ```
+    - 2x2 网格拼图
+    ```bash
+    magick image1.jpg image2.jpg image3.jpg image4.jpg -gravity center -background skyblue +append -append mosaic.jpg
+    ```
+
+10. 常用特效
+    - 高斯模糊
+    ```bash
+    magick input.jpg -blur 0x8 output.jpg
+    ```
+    - 素描效果
+    ```bash
+    magick input.jpg -charcoal 2 output.jpg
+    ```
+    - 复古褐色
+    ```bash
+    magick input.jpg -sepia-tone 80% output.jpg
+    ```
+    - 增加饱和度50%
+    ```bash
+    magick input.jpg -modulate 100,150,100 output.jpg
+    ```
+    - 染色效果
+    ```bash
+    magick input.jpg -colorize 30,60,90 red output.jpg
+    ```
+
+11. 去背景
+    ```bash
+    magick input.jpg -remove background output.png
+    ```
