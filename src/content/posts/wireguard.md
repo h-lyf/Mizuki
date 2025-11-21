@@ -133,11 +133,11 @@ WireGuard® 是一种极其简单但快速且现代的 VPN，它利用了最先�
     AllowedIPs = 0.0.0.0/0
     PersistentKeepalive = 10
     ```  
+    > AllowedIPs = 0.0.0.0/0        # 通过 WireGuard 隧道发送和接收任何目的地的 IP 流量,根据情况进行修改
     - 删除服务端规则  
     ```bash
     iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
     ```  
-    > AllowedIPs = 0.0.0.0/0        # 通过 WireGuard 隧道发送和接收任何目的地的 IP 流量,根据情况进行修改
 3. 保存规则  
     - 通过 iptables-persistent 保存  
     ```bash
