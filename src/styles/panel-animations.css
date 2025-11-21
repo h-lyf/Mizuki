@@ -74,6 +74,10 @@
     #mobile-toc-panel.float-panel-closed {
         transform: scaleY(0) scaleX(0.8);
     }
+    
+    #wallpaper-mode-panel.float-panel-closed {
+        transform: scaleY(0) scaleX(0.7);
+    }
 }
 
 /* 移动设备触摸优化 */

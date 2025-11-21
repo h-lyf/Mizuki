@@ -457,7 +457,18 @@ html {
 }
 
 ::selection {
-    background-color: var(--selection-bg)
+    background-color: var(--selection-bg);
+    color: inherit;
+}
+
+/* 白天模式下选中文本的颜色 */
+:root:not(.dark) ::selection {
+    color: #000000;
+}
+
+/* 夜间模式下选中文本的颜色 */
+:root.dark ::selection {
+    color: #ffffff;
 }
 
 .dash-line {

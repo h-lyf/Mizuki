@@ -17,12 +17,24 @@
 
 #decrypted-content .expressive-code ::selection {
   @apply bg-[var(--codeblock-selection)];
+  color: #ffffff;
 }
 
 /* frame容器样式 - 与expressive-code.css保持一致 */
 #decrypted-content .expressive-code .frame {
   @apply !shadow-none relative rounded-lg overflow-hidden;
   background: var(--codeblock-bg);
+}
+
+/* 允许代码文本被选择 */
+#decrypted-content .expressive-code .frame pre,
+#decrypted-content .expressive-code .frame code {
+  user-select: text;
+}
+
+/* 代码行号不可选，但行内容可选 */
+#decrypted-content .expressive-code code span.line::before {
+  user-select: none;
 }
 
 /* 语言标签样式 - 与expressive-code.css保持一致 */
@@ -343,6 +355,7 @@
 /* 确保代码块选择样式正确 */
 #decrypted-content .astro-code ::selection {
   @apply bg-[var(--codeblock-selection)];
+  color: #ffffff;
 }
 
 /* 语言标识样式 - 模拟expressive-code的language-badge插件 */

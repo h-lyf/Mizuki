@@ -12,9 +12,19 @@
 
 /* 代码块折叠功能 - frame作为折叠按钮 */
 .expressive-code.collapsible .frame {
-    user-select: none;
     transition: background-color 0.2s ease;
     position: relative;
+}
+
+/* 允许代码文本被选择 */
+.expressive-code .frame pre,
+.expressive-code .frame code {
+    user-select: text;
+}
+
+/* 代码行号不可选，但行内容可选 */
+.expressive-code code span.line::before {
+    user-select: none;
 }
 
 .expressive-code.collapsible .frame:hover {

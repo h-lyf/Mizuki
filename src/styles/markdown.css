@@ -107,6 +107,7 @@
         @apply my-4;
         ::selection {
             @apply bg-[var(--codeblock-selection)];
+            color: #ffffff;
         }
     }
 

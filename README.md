@@ -3,7 +3,7 @@
 ![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue) 
 ![Astro](https://img.shields.io/badge/Astro-5.15.3-orange)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ![Mizuki Preview](./README.webp)
 
@@ -31,45 +31,6 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 [**中文**](./README.zh.md) /
 [**日本語**](./docs/README.ja.md) /
 [**中文繁体**](./docs/README.tw.md) /
-
-## 🆕 v6.5 Update
-- **Code Block Collapsible**: Added support for collapsible code blocks, improving code reading experience.
-- **Repository Separation**: Added support for separating code repository and content repository, making content updates more convenient.
-- **New Frontend Layout Management**: Implemented a brand new frontend layout management system for better control.
-- **Website URL Configuration**: Added website URL configuration to config.ts for easier management.
-- **Layout Switching Feature**: Added frontend layout switching functionality for more flexible display options.
-- **Performance and Bug Fixes**: Optimized website performance and fixed various bugs for better user experience.
-
-## 🆕 v6.0 Update
-- **Page Refactoring**: Completely refactored anime, timeline, projects, skills, albums, friends, diary, and about pages for better performance and user experience.
-- **Page Toggle Feature**: Added page toggle functionality with SEO optimization modules, allowing control over feature page visibility.
-- **New Grid Layout**: Introduced new grid article list layout for improved content presentation.
-- **Ripple Management**: Added ripple effect management module for enhanced visual interactions.
-
-## 🆕 v5.0 Update
-- **Pio Live2D Integration**: Added Pio Live2D character, providing a cute interactive companion to enhance user engagement.
-- **Highly Configurable**: Supports detailed configuration in `src/config.ts`, including model path, position, size, dialogue content, etc., to meet personalized needs.
-- **Seamless Navigation**: The "Back to Home" feature now uses the theme's built-in Swup for smooth, no-refresh page transitions.
-
-## 🆕 v4.6 Update
-- **Anime Page:** Redesigned a cuter and more attractive anime page, including anime list, details, and timeline.
-- **Album Page:** Restructured the album page using pagination + folder data indexing solution.
-- **Brand New Animations:** Implemented new animation components for smoother and more beautiful page transitions.
-- **Image API Support:** Added support for image APIs, enabling quick image information retrieval using the [PicFlow API project](https://github.com/matsuzaka-yuki/PicFlow-API).
-
-## 🆕 v4.3 Update
-- **Anime Page:** Redesigned a cuter and more attractive anime page, including anime list, details, and timeline.
-- **Album Page:** Restructured the album page using pagination + folder data indexing solution.
-
-## 🆕 v3.4 Update
-- **New Pages:** Added project showcase, skills showcase, and timeline pages to display your work, professional skills, and growth journey.
-- **Dropdown Menu Fix:** Resolved the issue of border outlines appearing when clicking dropdown menus, improving interface consistency.
-- **Search Optimization:** Enhanced search functionality performance and accuracy.
-- **Footer HTML Injection:** Introduced a new feature allowing custom HTML content injection at the bottom of pages, providing greater flexibility.
-
-## 🆕 v3.3 Update
-- **Mermaid Syntax Support:** Added support for Mermaid chart syntax, now you can embed flowcharts, sequence diagrams, Gantt charts, etc. directly in Markdown.
-- **Umami Analytics:** Added support for Umami analytics, making it easy to integrate website visit data analysis.
 
 ![Configuration](configuration.svg)
 
@@ -314,18 +275,34 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+### Original Project License
+
+This project is based on [Fuwari](https://github.com/saicaca/fuwari), which is licensed under the MIT License. The original copyright notice and permission notice are included in the LICENSE.MIT file in accordance with the MIT License requirements.
 
 ## 🙏 Acknowledgements
 
 - Based on the original [Fuwari](https://github.com/saicaca/fuwari) template
-- Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
 - Inspired by [Yukina](https://github.com/WhitePaper233/yukina) - a beautiful and elegant blog template
+- Some designs are inspired by [Firefly](https://github.com/CuteLeaf/Firefly) template
+- Uses [Pio](https://github.com/Dreamer-Paul/Pio) to implement the adorable Live2D mascot plugin
+- Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
 - Icons from [Iconify](https://iconify.design/)
 
 ### Special Thanks
 
+- **[Fuwari](https://github.com/saicaca/fuwari)** by saicaca - The original template that this project is based on. Thank you for creating such a beautiful and functional template.
 - **[Yukina](https://github.com/WhitePaper233/yukina)** - Thanks for providing design inspiration and creativity that helped shape this project. Yukina is an elegant blog template that demonstrates excellent design principles and user experience.
+- **[Firefly](https://github.com/CuteLeaf/Firefly)** - Thanks for providing excellent layout design ideas. The dual sidebar layout, article dual-column grid layout, and some widget designs and implementations have enriched Mizuki's interface.
+
+## 🍀 Contributors
+
+Thanks to all contributors for their contributions to this project. If you have any questions or suggestions, please submit an [Issue](https://github.com/matsuzaka-yuki/Mizuki/issues) or [Pull Request](https://github.com/matsuzaka-yuki/Mizuki/pulls).
+
+<a href="https://github.com/matsuzaka-yuki/Mizuki/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=matsuzaka-yuki/Mizuki" />
+</a>
 
 ---
 
