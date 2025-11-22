@@ -18,7 +18,7 @@ FFmpeg 是一套用于处理多媒体内容（例如音频、视频、字幕和�
 
 # 介绍
 FFmpeg 是领先的多媒体框架，能够解码、编码、转码、复用、解复用、流式传输、过滤和播放几乎任何格式的视频。它支持最晦涩难懂的东西,从古老的格式到最前沿的格式。此外，FFmpeg 还具有高度可移植性,[FATE](http://fate.ffmpeg.org/) 可在 Linux、Mac OS X、Microsoft Windows、BSD、Solaris 等各种构建环境、机器架构和配置下运行。
-> 它包含可供应用程序使用的 libavcodec、libavutil、libavformat、libavfilter、libavdevice、libswscale 和 libswresample 库，以及用于转码和播放的 ffmpeg、ffplay 和 ffprobe 库。
+> 它包含可供应用程序使用的 [libavcodec](https://ffmpeg.org/libavcodec.html)、[libavutil](https://ffmpeg.org/libavutil.html)、[libavformat](https://ffmpeg.org/libavformat.html)、[libavfilter](https://ffmpeg.org/libavfilter.html)、[libavdevice](https://ffmpeg.org/libavdevice.html)、[libswscale](https://ffmpeg.org/libswscale.html) 和 [libswresample](https://ffmpeg.org/libswresample.html) 库，以及用于转码和播放的 [ffmpeg](https://ffmpeg.org/ffmpeg.html)、[ffplay](https://ffmpeg.org/ffplay.html) 和 [ffprobe](https://ffmpeg.org/ffprobe.html) 库。
 
 # 常用命令
 1. 基本信息查看
