@@ -8,7 +8,7 @@ tags: [ImageMagick, 软件, 开源]
 category: 开源软件
 licenseName: "Unlicensed"
 author: 御剑乘风
-sourceLink: "https://github.com/h-lyf/Mizuki/blob/master/src/content/posts/imagemagick.md"
+# sourceLink: "https://github.com/h-lyf/Mizuki/blob/master/src/content/posts/imagemagick.md"
 draft: false
 date: 2025-11-19
 pubDate: 2025-11-19
