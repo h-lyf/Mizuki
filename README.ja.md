@@ -276,7 +276,7 @@ export const siteConfig: SiteConfig = {
 - [Astro](https://astro.build)と[Tailwind CSS](https://tailwindcss.com)で構築
 - アイコンは[Iconify](https://iconify.design/)から
 
-### 特別な感謝
+### 🌸 特別な感謝
 
 - **[Fuwari](https://github.com/saicaca/fuwari)** by saicaca - このプロジェクトのベースとなるオリジナルテンプレート。このような美しく機能的なテンプレートを作成していただきありがとうございます。
 - **[Yukina](https://github.com/WhitePaper233/yukina)** - このプロジェクトの形成に役立ったデザインのインスピレーションと創造性を提供してくれたことに感謝します。Yukinaは優れたデザイン原則とユーザーエクスペリエンスを示す、エレガントなブログテンプレートです。
@@ -290,6 +290,9 @@ export const siteConfig: SiteConfig = {
   <img src="https://contrib.rocks/image?repo=matsuzaka-yuki/Mizuki" />
 </a>
 
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=matsuzaka-yuki/Mizuki&type=Date)](https://star-history.com/#matsuzaka-yuki/Mizuki&Date)
 ---
 
 ⭐ このプロジェクトが役立つと思ったら、スターを付けることを検討してください！

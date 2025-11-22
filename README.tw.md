@@ -282,7 +282,7 @@ export const siteConfig: SiteConfig = {
 - 使用 [Astro](https://astro.build) 和 [Tailwind CSS](https://tailwindcss.com) 構建
 - 圖標來自 [Iconify](https://iconify.design/)
 
-### 特別感謝
+### 🌸 特別感謝
 
 - **[Fuwari](https://github.com/saicaca/fuwari)** by saicaca - 本專案所基於的原始模板。感謝您創建了如此漂亮且功能強大的模板。
 - **[Yukina](https://github.com/WhitePaper233/yukina)** - 感謝提供設計靈感和創意，幫助塑造了這個專案。Yukina 是一個優雅的部落格模板，展現了出色的設計原則和使用者體驗。
@@ -295,5 +295,9 @@ export const siteConfig: SiteConfig = {
 <a href="https://github.com/matsuzaka-yuki/Mizuki/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=matsuzaka-yuki/Mizuki" />
 </a>
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=matsuzaka-yuki/Mizuki&type=Date)](https://star-history.com/#matsuzaka-yuki/Mizuki&Date)
 
 ⭐ 如果您覺得這個專案有幫助，請考慮給它一個星標！
