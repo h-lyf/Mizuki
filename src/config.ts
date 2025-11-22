@@ -240,12 +240,12 @@ export const navBarConfig: NavBarConfig = {
 			url: "/links/",
 			icon: "material-symbols:link",
 			children: [
-				{
-					name: "GitHub",
-					url: "https://github.com/h-lyf",
-					external: true,
-					icon: "fa6-brands:github",
-				},
+				// {
+				// 	name: "GitHub",
+				// 	url: "https://github.com/h-lyf",
+				// 	external: true,
+				// 	icon: "fa6-brands:github",
+				// },
 				{
 					name: "Mail",
 					url: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=mail@666411.xyz",
@@ -377,11 +377,11 @@ export const profileConfig: ProfileConfig = {
 		// 	icon: "mdi:git",
 		// 	url: "https://gitee.com/matsuzakayuki",
 		// },
-		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/h-lyf",
-		},
+		// {
+		// 	name: "GitHub",
+		// 	icon: "fa6-brands:github",
+		// 	url: "https://github.com/h-lyf",
+		// },
 		// {
 		// 	name: "Codeberg",
 		// 	icon: "simple-icons:codeberg",
@@ -647,7 +647,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 		home: "点击这里回到首页！", // 首页提示
 		skin: ["想看看我的新衣服吗？", "新衣服真漂亮~"], // 换装提示
 		close: "QWQ 下次再见吧~", // 关闭提示
-		link: "https://github.com/h-lyf/Mizuki", // 关于链接
+		link: "https://github.com/matsuzaka-yuki/Mizuki", // 关于链接
 	},
 };
 
